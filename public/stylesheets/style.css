@@ -7,6 +7,13 @@ a {
   color: #00B7FF;
 }
 
-#pageOne {
+#landingPage {
   background-image: url('../images/bubblebot53.jpg');
+  width: 80vh;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+#learnMore {
+  color:white;
 }
