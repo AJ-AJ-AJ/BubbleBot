@@ -1,6 +1,14 @@
+*{
+  margin-top:0;
+}
+
 body {
-  padding: 50px;
+  padding: 0px 50px 0px 50px;
+  margin-top:0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 a {
@@ -9,11 +17,27 @@ a {
 
 #landingPage {
   background-image: url('../images/bubblebot53.jpg');
-  width: 80vh;
+  background-size: cover;
+  width: 100vh;
   height: 100vh;
   background-repeat: no-repeat;
+  display: flex;
+}
+
+#learnMoreContainer {
+  background-color: yellow;
+  width: 200px;
+  text-align: center;
+  padding: 2px;
+  align-self: flex-end;
 }
 
 #learnMore {
-  color:white;
+  display:none;
+}
+
+#signUpBox{
+  width: 325px;
+  height: 65%;
+  background-color: dimgrey;
 }
