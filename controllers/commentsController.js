@@ -21,10 +21,10 @@ router.get('/', (req, res) => {
 
 // NEW Route
 router.get('/new', (req, res) => {
-  res.render('homework/new')
+  res.render('comments/new')
 })
 
-// CREATE Route
+// CREATE Route ********
 router.post('/', (req, res) => {
   const newComment = req.body
   Comments
