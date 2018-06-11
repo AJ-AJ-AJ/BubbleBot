@@ -4,7 +4,7 @@ const Topic = require('../models/topic')
 
 router.get('/', (req, res) => {
 
-    // Find all Comments
+    // Find all Topics
     Topic
       .find()
       .then((listOfTopic) => {
