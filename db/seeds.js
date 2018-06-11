@@ -1,52 +1,42 @@
 const mongoose = require('mongoose')
-const Homework = require('../models/Homework')
+const Topic = require('../models/topic')
+const Article = require('../models/article')
+const Comments = require('../models/comments')
 
 // Connect to Database
-mongoose.connect('mongodb://localhost/homework-helper')
-  .then(() => {
-    console.log('connected to mongoDB')
-  })
-  .catch((err) => {
-    console.log('ERROR', err)
-  })
-
-// Remove old Homework Data
-Homework.remove()
-  .then(() => {
-
-    // create new test Homework data
-    const homework1 = new Homework({
-      title: 'Pirates Read/Create',
-      description: 'pirates',
-      subject: 'express',
-      createdBy: 'bob'
+mongoose.connect('mongodb://localhost/BubbleBot')
+    .then(() => {
+        console.log('connected to mongoDB')
     })
-    const homework2 = new Homework({
-      title: 'Pirates update/dleete',
-      description: 'more pirates',
-      subject: 'express',
-      createdBy: 'joof'
-    })
-    const homework3 = new Homework({
-      title: 'Pizza Express',
-      description: 'PIZZA',
-      subject: 'React',
-      createdBy: 'sal'
-    })
-    const homework4 = new Homework({
-      title: 'final projexct',
-      description: 'everything',
-      subject: 'rails',
-      createdBy: 'bryan'
+    .catch((err) => {
+        console.log('ERROR', err)
     })
 
-    const homeworks = [ homework1, homework2, homework3, homework4 ]
+// Remove old Topic Data
+    Topic.remove()
+        .then(() => {
 
-    // save test data
-    return Homework.insertMany(homeworks)
-  })
-  .then(() => {
+        // create new test Topic data
+        const topicA = new Topic({
+            name: 'Industry Leaders',
+            description: 'The Lady Pioneers in Tech'
+        })
+        const topicB = new Topic({
+            name: 'Tech Trends',
+            description: 'What is new in tech?'
+        })
+        const topicC = new Topic({
+            name: 'Startups',
+            description: 'Startups to watch'
+        })
 
-    // close the database
-    mongoose.connection.close()
-  })
+        const topics = [ topicA, topicB, topicC ]
+
+        // save test data
+            return Topic.insertMany(topics)
+          })
+          .then(() => {
+
+        // close the database
+        mongoose.connection.close()
+    })
