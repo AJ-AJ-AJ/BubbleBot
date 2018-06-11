@@ -8,8 +8,9 @@ var logger = require('morgan');
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI); 
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var articleRouter = require('./controllers/articleController');
+var commentsRouter = require('./controllers/commentsController');
+var topicRouter = require('./controllers/topicController');
 
 var app = express();
 
@@ -23,8 +24,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/topic', topicRouter);
+app.use('/comments', commentsRouter);
+
+
+app.use('/', (req,res)=>{
+  res.render('index');
+})
+//app.use('topic/:topicId')
+//app.use('/topic/:topicId/article/articleId/comments', commentController)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
