@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 
       // Once you have all comments, then render out index page homeworks is all
       // pieces of data that match the Homework Model
-      res.render('comments/index', { listOfcomments: listOfcomments })
+      res.render('comments/index', { listOfComments: listOfComments })
     })
     .catch((err) => res.send(err))
 
