@@ -1,0 +1,24 @@
+<main>
+    <a href="/topic/new">Add new Topic</a>
+
+    <h2>Not the donuts app I swear!</h2>
+
+    {{#each topic}}
+    <p>{{name}}</p>
+
+    <p>{{description}}</p>
+    {{#each articles}}
+    <p>{{link}}</p>
+    <p>{{title}}</p>
+    <p>{{summary}}</p>
+    {{#each comments}}
+    <p>{{title}}</p>
+    <p>{{author}}</p>
+    <p>{{comment}}</p>
+    <p>{{date}}</p>
+    {{/each}} {{/each}} {{/each}}
+    <form action="/topic/{{topic._id}}?_method=DELETE" method="POST" class="button">
+        <button type="submit">Delete Topic</button>
+    </form>
+</main>
+<img src="" alt="">

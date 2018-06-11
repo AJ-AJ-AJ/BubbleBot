@@ -1,10 +1,14 @@
 <main>
+    <a href="/topic/new">Add new Topic</a>
+
     <h2>Not the donuts app I swear!</h2>
 
     {{#each listOfTopic}}
-    <p>{{name}}</p>
-   
-    <p>{{description}}</p>
+    <a href="/topic/{{_id}}">
+        <p>{{name}}</p>
+        <p>{{description}}</p>
+    </a>
+
 
     {{/each}}
 
