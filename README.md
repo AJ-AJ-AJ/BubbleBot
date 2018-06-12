@@ -30,8 +30,8 @@ The goal of this project was to create a full stack application using Express.js
 
 ## Wireframe
 
-![Wireframe](images/signIn.png)
-![Wireframe](images/signUp.png)
+![Wireframe](public/images/signIn.png)
+![Wireframe](../images/signUp.png)
 ![Wireframe](images/chooseTopic.png)
 ![Wireframe](images/articles.png)
 ![Wireframe](images/erd.png)
