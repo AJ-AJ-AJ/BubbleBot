@@ -22,22 +22,36 @@ a {
   height: 100vh;
   background-repeat: no-repeat;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #learnMoreContainer {
+  width: 65%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#learnMoreButton{
   background-color: yellow;
   width: 200px;
-  text-align: center;
-  padding: 2px;
-  align-self: flex-end;
+  height: 40px;
+  font-weight: bold;
 }
 
 #learnMore {
   display:none;
+  color:white;
+  font-weight: bold;
 }
 
 #signUpBox{
   width: 325px;
   height: 65%;
-  background-color: dimgrey;
+  background-color: #383838;
+  margin-bottom: 20px;
 }
