@@ -39,9 +39,9 @@ The goal of this project was to create a full stack application using Express.js
 
 ## Additions to a Future Version
 
-  * Style the background
-  * Keyframes
-  * More challenging questions
-  * A game over animation
-  * Round 2
-  * Add useful commit messages
+  * Store Users that Sign Up
+  * Add ability to comment
+  * Finish Styling
+  * Use Materlialize Framework
+  * Make mobile responsive
+  * Add animations
