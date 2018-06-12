@@ -13,7 +13,7 @@ The goal of this project was to create a full stack application using Express.js
 ## Technologies Used
 
   * Frameworks - Express.js, MongoDB
-  * Languages - HTML5, CSS3
+  * Languages - HTML5, CSS3, JavaScript
   * Wireframe - Google Slides
   * Project Planning & User Stories - [Trello](https://trello.com/b/qwen5xAT/bubblebot)
   * Deployment - Heroku - [Heroku](https://ancient-ocean-75544.herokuapp.com/)
@@ -26,6 +26,7 @@ The goal of this project was to create a full stack application using Express.js
   * Sign In/Sign Up
   * CRUD
   * ERD Data Model
+  * Flexbox
 
 
 ## Wireframe
