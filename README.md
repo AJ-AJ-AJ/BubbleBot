@@ -42,6 +42,8 @@ The goal of this project was to create a full stack application using Express.js
   * Store Users that Sign Up
   * Add ability to comment
   * Finish Styling
+  * Make user flow intuitive
+  * Add buttons
   * Use Materlialize Framework
   * Make mobile responsive
   * Add animations
